@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.arimil.hudcraft.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "InventoryButtonMixin",
+    "PlayerInventoryMixin",
+    "PlayerContainerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
