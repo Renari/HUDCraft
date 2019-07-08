@@ -14,12 +14,6 @@ group = project.maven_group
 minecraft {
 }
 
-
-
-repositories {
-    maven { url "https://minecraft.curseforge.com/api/maven" }
-}
-
 dependencies {
 	//to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -28,8 +22,8 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modCompile "io.github.prospector.modmenu:ModMenu:1.6.2-93"
-    modCompile "me.shedaniel:RoughlyEnoughItems:2.9.6+build.138"
+    modCompile curse.resolve("roughly-enough-items", "2736489")
+    modCompile curse.resolve("modmenu", "2719901")
     // modCompile curse.resolve("cosmetic-armor-slots", "2733507")
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
